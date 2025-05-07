@@ -17,15 +17,15 @@ namespace VotingSystem
         SqlConnection conn;
         public loginForm()
         {
-            try
+            /*try
             {
-                conn = new SqlConnection("Data Source=JENNIFER-PC\\SQLEXPRESS;Initial Catalog=VotingSystem;Integrated Security=True;Encrypt=True;TrustServerCertificate=True;User Instance=False");
+                conn = new SqlConnection("Data Source=;Initial Catalog=VotingSystem;Integrated Security=True;Encrypt=True;TrustServerCertificate=True;User Instance=False");
                 conn.Open();
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error " + ex.Message);
-            }
+            } */
             InitializeComponent();
         }
 
@@ -53,7 +53,7 @@ namespace VotingSystem
             string studentId = studentIdTb.Text;
             string password = passwordTb.Text;
 
-            string query = "SELECT * FROM voter WHERE studentId = '" + studentId + "'And password= '" + password +  "'";
+            /*string query = "SELECT * FROM voter WHERE studentId = '" + studentId + "'And password= '" + password +  "'";
             SqlCommand cmd = new SqlCommand(query, conn);
             SqlDataReader dataReader;
             dataReader = cmd.ExecuteReader();
@@ -67,7 +67,24 @@ namespace VotingSystem
                 MessageForm mf = new MessageForm("INVALID CREDENTIALS");
             }
 
-            dataReader.Close();
+            dataReader.Close();*/
+
+            if(studentId == "chrisia" && password == "chrisia")
+            {
+                
+                HomeForm h = new HomeForm();
+                h.Show();
+                MessageForm m = new MessageForm("LOGIN SUCCESSFULL");
+                this.Dispose();
+            }
+
+            if (studentId == "admin" && password == "admin")
+            { 
+                AdminForm a = new AdminForm();
+                a.Show();
+                MessageForm m = new MessageForm("LOGIN SUCCESSFULL");
+                this.Dispose();
+            }
         }
 
         private void registerLabel_Click(object sender, EventArgs e)

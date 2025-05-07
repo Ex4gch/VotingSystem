@@ -16,5 +16,12 @@ namespace VotingSystem
         {
             InitializeComponent();
         }
+
+        private void viewPartylistButton_Click(object sender, EventArgs e)
+        {
+            viewPartyListForm vp = new viewPartyListForm();
+            this.Hide();
+            vp.Show();  
+        }
     }
 }

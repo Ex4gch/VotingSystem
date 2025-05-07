@@ -45,7 +45,7 @@
             this.loginLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
             this.loginLabel.Location = new System.Drawing.Point(339, 100);
             this.loginLabel.Name = "loginLabel";
-            this.loginLabel.Size = new System.Drawing.Size(119, 43);
+            this.loginLabel.Size = new System.Drawing.Size(154, 55);
             this.loginLabel.TabIndex = 2;
             this.loginLabel.Text = "LOGIN";
             // 
@@ -56,7 +56,7 @@
             this.studentIdTb.ForeColor = System.Drawing.Color.Black;
             this.studentIdTb.Location = new System.Drawing.Point(249, 196);
             this.studentIdTb.Name = "studentIdTb";
-            this.studentIdTb.Size = new System.Drawing.Size(309, 30);
+            this.studentIdTb.Size = new System.Drawing.Size(309, 35);
             this.studentIdTb.TabIndex = 2;
             this.studentIdTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.studentIdTb.TextChanged += new System.EventHandler(this.studentIdTb_TextChanged);
@@ -69,7 +69,7 @@
             this.passwordTb.ForeColor = System.Drawing.Color.Black;
             this.passwordTb.Location = new System.Drawing.Point(249, 243);
             this.passwordTb.Name = "passwordTb";
-            this.passwordTb.Size = new System.Drawing.Size(309, 30);
+            this.passwordTb.Size = new System.Drawing.Size(309, 35);
             this.passwordTb.TabIndex = 3;
             this.passwordTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.passwordTb.Enter += new System.EventHandler(this.passwordTb_Enter);
@@ -100,7 +100,7 @@
             this.registerLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
             this.registerLabel.Location = new System.Drawing.Point(449, 339);
             this.registerLabel.Name = "registerLabel";
-            this.registerLabel.Size = new System.Drawing.Size(109, 13);
+            this.registerLabel.Size = new System.Drawing.Size(144, 17);
             this.registerLabel.TabIndex = 6;
             this.registerLabel.Text = "CREATE AN ACCOUNT";
             this.registerLabel.Click += new System.EventHandler(this.registerLabel_Click);
@@ -119,7 +119,7 @@
             // 
             // loginForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(25)))), ((int)(((byte)(89)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
@@ -135,7 +135,6 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "loginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "LOGIN";
             this.Load += new System.EventHandler(this.Form2_Load_1);
             this.ResumeLayout(false);
             this.PerformLayout();

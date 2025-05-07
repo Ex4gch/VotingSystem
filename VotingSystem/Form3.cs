@@ -17,15 +17,15 @@ namespace VotingSystem
         SqlConnection conn;
         public registerForm()
         {
-            try
+            /*try
             {
-                conn = new SqlConnection("Data Source=JENNIFER-PC\\SQLEXPRESS;Initial Catalog=VotingSystem;Integrated Security=True;Encrypt=True;TrustServerCertificate=True;User Instance=False");
+                conn = new SqlConnection("Data Source=;Initial Catalog=VotingSystem;Integrated Security=True;Encrypt=True;TrustServerCertificate=True;User Instance=False");
                 conn.Open();
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error " + ex.Message);
-            }
+            }*/
             InitializeComponent();
         }
 
@@ -46,7 +46,7 @@ namespace VotingSystem
         private void submitButton_Click(object sender, EventArgs e)
         {
             String firstName, lastName, email, password;
-            int studentId;
+            /*int studentId;
 
             firstName = firstNameTb.Text;
             lastName = lastNameTb.Text;
@@ -56,7 +56,7 @@ namespace VotingSystem
             SqlCommand cmd = new SqlCommand("insert into voter(firstName, lastName, email, password, studentId) values('"+ firstName +"','" + lastName + "','" + email + "','" + password + "','" + studentId +"');", conn);
             int i = cmd.ExecuteNonQuery();
             if (i != 0) MessageBox.Show("SAVEEE");
-            else MessageBox.Show("WALAAA");
+            else MessageBox.Show("WALAAA");*/
         }
 
         private void studentIdTb_Enter(object sender, EventArgs e)

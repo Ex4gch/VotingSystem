@@ -43,12 +43,14 @@
             this.viewPartylistButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.viewPartylistButton.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.viewPartylistButton.ForeColor = System.Drawing.Color.Black;
-            this.viewPartylistButton.Location = new System.Drawing.Point(277, 238);
+            this.viewPartylistButton.Location = new System.Drawing.Point(369, 293);
+            this.viewPartylistButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.viewPartylistButton.Name = "viewPartylistButton";
-            this.viewPartylistButton.Size = new System.Drawing.Size(309, 42);
+            this.viewPartylistButton.Size = new System.Drawing.Size(412, 52);
             this.viewPartylistButton.TabIndex = 5;
             this.viewPartylistButton.Text = "VIEW PARTYLIST";
             this.viewPartylistButton.UseVisualStyleBackColor = false;
+            this.viewPartylistButton.Click += new System.EventHandler(this.viewPartylistButton_Click);
             // 
             // castVoteButton
             // 
@@ -59,9 +61,10 @@
             this.castVoteButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.castVoteButton.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.castVoteButton.ForeColor = System.Drawing.Color.Black;
-            this.castVoteButton.Location = new System.Drawing.Point(277, 299);
+            this.castVoteButton.Location = new System.Drawing.Point(369, 368);
+            this.castVoteButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.castVoteButton.Name = "castVoteButton";
-            this.castVoteButton.Size = new System.Drawing.Size(309, 42);
+            this.castVoteButton.Size = new System.Drawing.Size(412, 52);
             this.castVoteButton.TabIndex = 6;
             this.castVoteButton.Text = "CAST VOTE";
             this.castVoteButton.UseVisualStyleBackColor = false;
@@ -73,23 +76,24 @@
             this.logo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("logo.BackgroundImage")));
             this.logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.logo.ForeColor = System.Drawing.Color.Transparent;
-            this.logo.Location = new System.Drawing.Point(345, 25);
-            this.logo.Margin = new System.Windows.Forms.Padding(2);
+            this.logo.Location = new System.Drawing.Point(460, 31);
+            this.logo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.logo.Name = "logo";
-            this.logo.Size = new System.Drawing.Size(178, 170);
+            this.logo.Size = new System.Drawing.Size(237, 209);
             this.logo.TabIndex = 7;
             // 
             // HomeForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(856, 497);
+            this.ClientSize = new System.Drawing.Size(1141, 612);
             this.Controls.Add(this.logo);
             this.Controls.Add(this.castVoteButton);
             this.Controls.Add(this.viewPartylistButton);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "HomeForm";
             this.Text = "HOME";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

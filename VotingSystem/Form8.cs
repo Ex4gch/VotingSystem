@@ -13,8 +13,12 @@ namespace VotingSystem
     public partial class viewPartyListForm : Form
     {
         Point p;
+        Color c;
+        Panel[] panels = new Panel[3];
+        int i = 0;
         public void enter(Panel panel, string name, string section, string info, string position, Image img)
         {
+            bioPanel.Visible = false;
             infoPosition.Text = position;
             nameLbl.Text = name;
             sectionLbl.Text = section;
@@ -29,11 +33,11 @@ namespace VotingSystem
         {
             panel.Location = p;
             moreInfoPanel.Visible = false;
+            bioPanel.Visible = true;
         }
 
         public viewPartyListForm()
         {
-            
             InitializeComponent();
         }
 
@@ -61,6 +65,8 @@ namespace VotingSystem
         private void viewPartyListForm_Load(object sender, EventArgs e)
         {
             additionalInfoLbl.MaximumSize = new Size(586, 304);
+
+            panels = new Panel[] { firstPanel, secondPanel, thirdPanel };
         }
 
         private void vicePanel_MouseEnter(object sender, EventArgs e)
@@ -90,13 +96,13 @@ namespace VotingSystem
         private void caresPanel_MouseEnter(object sender, EventArgs e)
         {
             moreInfoPanel.Visible = true;
-            enter(caresPanel,"JOSHUA INOC", "BSIT-2A", "LOVELYN****", "CARES\nREPRESENTATIVE", caresPicture.Image);
+            enter(treasurerPanel,"JOSHUA INOC", "BSIT-2A", "LOVELYN****", "CARES\nREPRESENTATIVE", treasurerPicture.Image);
 
         }
 
         private void caresPanel_MouseLeave(object sender, EventArgs e)
         {
-            leave(caresPanel);
+            leave(treasurerPanel);
         }
 
         private void secretaryPanel_MouseEnter(object sender, EventArgs e)
@@ -108,6 +114,51 @@ namespace VotingSystem
         private void secretaryPanel_MouseLeave(object sender, EventArgs e)
         {
             leave(secretaryPanel);
+        }
+        private void nextnextButton_MouseEnter(object sender, EventArgs e)
+        {
+            c = nextnextButton.ForeColor;
+            p = nextnextButton.Location;
+            nextnextButton.ForeColor = Color.LightGoldenrodYellow;
+            nextnextButton.Location = new Point(nextnextButton.Location.X + 4, nextnextButton.Location.Y);
+        }
+
+        private void nextnextButton_MouseLeave(object sender, EventArgs e)
+        {
+            nextnextButton.ForeColor = c;
+            nextnextButton.Location = p;
+        }
+
+        private void previousButton_MouseEnter(object sender, EventArgs e)
+        {
+            c = previousButton.ForeColor;
+            p = previousButton.Location;
+            previousButton.ForeColor = Color.LightGoldenrodYellow;
+            previousButton.Location = new Point(previousButton.Location.X - 4, previousButton.Location.Y);
+        }
+
+        private void previousButton_MouseLeave(object sender, EventArgs e)
+        {
+            previousButton.ForeColor = c;
+            previousButton.Location = p;
+        }
+        private void nextnextButton_Click(object sender, EventArgs e)
+        {
+            panels[i].Visible = false;
+            i++;
+            if (i == 3) i = 0;
+            panels[i].Visible = true;
+
+            this.Invalidate();
+        }
+        private void previousButton_Click(object sender, EventArgs e)
+        {
+            panels[i].Visible = false;
+            i--;
+            if (i < 0) i = 2;
+            panels[i].Visible = true;
+
+            this.Invalidate();
         }
     }
 }

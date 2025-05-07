@@ -43,9 +43,10 @@
             this.createPartylistButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.createPartylistButton.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.createPartylistButton.ForeColor = System.Drawing.Color.Black;
-            this.createPartylistButton.Location = new System.Drawing.Point(277, 238);
+            this.createPartylistButton.Location = new System.Drawing.Point(369, 293);
+            this.createPartylistButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.createPartylistButton.Name = "createPartylistButton";
-            this.createPartylistButton.Size = new System.Drawing.Size(309, 42);
+            this.createPartylistButton.Size = new System.Drawing.Size(412, 52);
             this.createPartylistButton.TabIndex = 5;
             this.createPartylistButton.Text = "CREATE PARTYLIST";
             this.createPartylistButton.UseVisualStyleBackColor = false;
@@ -60,9 +61,10 @@
             this.viewResultButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.viewResultButton.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.viewResultButton.ForeColor = System.Drawing.Color.Black;
-            this.viewResultButton.Location = new System.Drawing.Point(277, 299);
+            this.viewResultButton.Location = new System.Drawing.Point(369, 368);
+            this.viewResultButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.viewResultButton.Name = "viewResultButton";
-            this.viewResultButton.Size = new System.Drawing.Size(309, 42);
+            this.viewResultButton.Size = new System.Drawing.Size(412, 52);
             this.viewResultButton.TabIndex = 6;
             this.viewResultButton.Text = "VIEW RESULT";
             this.viewResultButton.UseVisualStyleBackColor = false;
@@ -74,23 +76,24 @@
             this.logo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("logo.BackgroundImage")));
             this.logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.logo.ForeColor = System.Drawing.Color.Transparent;
-            this.logo.Location = new System.Drawing.Point(345, 25);
-            this.logo.Margin = new System.Windows.Forms.Padding(2);
+            this.logo.Location = new System.Drawing.Point(460, 31);
+            this.logo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.logo.Name = "logo";
-            this.logo.Size = new System.Drawing.Size(178, 170);
+            this.logo.Size = new System.Drawing.Size(237, 209);
             this.logo.TabIndex = 7;
             // 
             // AdminForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(856, 497);
+            this.ClientSize = new System.Drawing.Size(1141, 612);
             this.Controls.Add(this.logo);
             this.Controls.Add(this.viewResultButton);
             this.Controls.Add(this.createPartylistButton);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "AdminForm";
             this.Text = "ADMIN";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
